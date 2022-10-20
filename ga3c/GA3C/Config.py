@@ -38,7 +38,7 @@ class Train(EnvConfig):
 
         # self.STATES_IN_OBS = ['is_learning', 'num_other_agents', 'dist_to_goal', 'heading_ego_frame', 'pref_speed', 'radius', 'laserscan']
         self.STATES_IN_OBS = ['is_learning', 'num_other_agents',
-                              'dist_to_goal', 'heading_ego_frame', 'pref_speed', 'radius', 'other_agents_states']
+                              'dist_to_goal', 'heading_ego_frame', 'pref_speed', 'radius', 'noisy_other_agents_states']
         self.STATES_NOT_USED_IN_POLICY = ['is_learning']
 
         self.MULTI_AGENT_ARCH_RNN, self.MULTI_AGENT_ARCH_WEIGHT_SHARING, self.MULTI_AGENT_ARCH_LASERSCAN = range(3)
