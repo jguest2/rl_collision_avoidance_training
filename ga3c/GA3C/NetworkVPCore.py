@@ -18,7 +18,7 @@ class NetworkVPCore(object):
         # if training, add run to GA3C-CADRL project, add hyperparams and auto-upload checkpts
         if not Config.PLAY_MODE and not Config.EVALUATE_MODE and Config.USE_WANDB:
             import wandb
-            from wandb.tensorflow import WandbHook
+            #from wandb.tensorflow import WandbHook
             wandb.init(project=Config.WANDB_PROJECT_NAME, dir=self.wandb_dir)
             for attr, value in Config.__dict__.items():
                 # wandb can't handle np objs, but otherwise send it all
